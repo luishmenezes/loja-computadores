@@ -1,0 +1,95 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Seção de lista de produtos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cartões individuais */
+.product-list__card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-list__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Link */
+.product-list__link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagem do produto */
+.product-list__card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Nome do produto */
+.product-item__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    color: #333333;
+}
+
+/* Preço */
+.product-item__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 0;
+}
+
+/* Descrição do preço */
+.product-item__price-descripction {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 5px 0 15px;
+}
+
+/* Botão de compra */
+.product-item__buy-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-item__buy-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
